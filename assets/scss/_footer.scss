@@ -1,0 +1,145 @@
+// $font-size1
+// $line-height
+// $height
+// $width
+// $border
+// $borderRadius
+// $icon-fade
+
+
+
+#main-footer {
+	background: $dark-color;
+	color: $light-color;
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 1.125rem;
+		.social-icons,
+		.code-icons {
+			display: flex;
+			flex-direction: row;
+			& a {
+				color: lighten($dark-color, 25%);
+			}
+			& div {
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				font-size: $font-size10;
+				line-height: $line-height;
+				height: $height;
+				width: $width;
+				padding: 0.1rem;
+				border: solid $border transparent;
+				border-radius: $borderRadius;
+				margin: 0.5rem;
+				transition: $icon-fade;
+				&:hover {
+					transition: $icon-fade;
+					& a {
+						color: $light-color;
+						transition: $icon-fade;
+					}
+				}
+				&::before {
+					margin: -$border;
+				}
+				&.facebook:hover {
+					background: #3b5998;
+				}
+				&.twitter:hover {
+					background: #55acee;
+				}
+				&.linkedin:hover {
+					background: #007bb5;
+				}
+				&.instagram {
+					position: relative;
+					transition: $icon-fade;
+					z-index: 1;
+					&::before {
+						content: "";
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background: radial-gradient(
+							circle at 30% 107%,
+							#fdf497 0%,
+							#fdf497 5%,
+							#fd5949 45%,
+							#d6249f 60%,
+							#285aeb 90%
+						);
+						border-radius: 7px;
+						transition: 2s;
+						opacity: 0;
+						z-index: -1;
+					}
+					&:hover::before {
+						opacity: 1;
+					}
+				}
+				&.youtube:hover {
+					background: #bb0000;
+				}
+				&.codepen {
+					position: relative;
+					top: 0px;
+					background-clip: padding-box;
+					border-radius: $borderRadius;
+					z-index: 1;
+					&::before {
+						content: "";
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						border-radius: $borderRadius;
+						background: linear-gradient(
+							115deg,
+							#4fcf70,
+							#fad648,
+							#a767e5,
+							#12bcfe,
+							#44ce7b
+						);
+						transition: $icon-fade;
+						opacity: 0;
+						z-index: -1;
+						& a {
+							position: relative;
+							top: 20px;
+						}
+					}
+					&:hover::before {
+						opacity: 1;
+					}
+					&::after {
+						content: "";
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background-color: $dark-color;
+						border-radius: $borderRadius;
+						z-index: -1;
+					}
+				}
+				&.github:hover {
+					background: #e84d31;
+					& a {
+						color: $dark-color;
+					}
+				}
+			}
+		}
+	}
+}

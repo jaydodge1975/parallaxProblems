@@ -1,0 +1,88 @@
+//! font size base with default root of 16px
+
+$font-size01: 0.625rem; // 10px
+$font-size02: 0.75rem; // 12px
+$font-size03: 0.875rem; // 14px
+$font-size04: 1rem; // 16px
+$font-size05: 1.125rem; // 18px
+$font-size06: 1.25rem; // 20px
+$font-size07: 1.375rem; // 22px
+$font-size08: 1.5rem; // 24px
+$font-size09: 1.625rem; // 26px
+$font-size10: 1.75rem; // 28px
+$font-size11: 1.875rem; // 30px
+
+//! default line height is 1.2
+
+$line-height: 2rem;
+
+$height: 2.5rem;
+$width: 2.5rem;
+
+
+// ! Colors
+
+$primary-color: #358ccb;
+$primary-color-light: lighten($primary-color,5%);
+$primary-color-dark: darken($primary-color,5%);
+$primary-color-lighter: lighten($primary-color,10%);
+$primary-color-darker: darken($primary-color,10%);
+
+$primary-color2: #72afdb;
+
+$secondary-color: #25628f;
+$secondary-color-light: lighten($secondary-color,5%);
+$secondary-color-dark: darken($secondary-color,5%);
+$secondary-color-lighter: lighten($secondary-color,10%);
+$secondary-color-darker: darken($secondary-color,10%);
+
+$light-color: #f4f4f4;
+$light-color-light: lighten($light-color,5%);
+$light-color-dark: darken($light-color,5%);
+$light-color-lighter: lighten($light-color,10%);
+$light-color-darker: darken($light-color,10%);
+
+$medium-color1: #707070;
+$medium-color1-light: lighten($medium-color1,5%);
+$medium-color1-dark: darken($medium-color1,5%);
+$medium-color1-lighter: lighten($medium-color1,10%);
+$medium-color1-darker: darken($medium-color1,10%);
+
+$medium-color2: #383838;
+$medium-color3: #2d2d2d;
+
+$dark-color: #1e1e1e;
+$dark-color-light: lighten($dark-color,5%);
+$dark-color-dark: darken($dark-color,5%);
+$dark-color-lighter: lighten($dark-color,10%);
+$dark-color-darker: darken($dark-color,10%);
+
+
+
+
+
+$website-width: 1280px;
+$heroHeight: 100vh;
+$hero-overlay-color: #1e1e1e; // #454647;
+
+
+// ! used for footer (dark-color, light-color, font-size1,)
+
+
+
+
+// $line-height: 2.6rem;
+// $height: 2.6rem;
+// $width: 2.6rem;
+// $width: 1.9375rem;
+
+$icon-fade: 0.7s;
+$border: 4px;
+$border-inner: -4px;
+$borderRadius: 12%;
+
+// transition speed
+$speed: 10s;
+
+$hero-bg: url("../imgs/portfolio/showcase.jpg");
+$nav-bg: url("../imgs/portfolio/nav-bg.jpg");

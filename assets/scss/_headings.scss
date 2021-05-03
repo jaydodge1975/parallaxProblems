@@ -1,0 +1,78 @@
+.titleContainer {
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titleLeft {
+  color: $dark-color;
+  background-color: $primary-color;
+  border: $medium-color1 solid 0.1rem;
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 15rem;
+  margin-right: 0.5rem;
+  transform: skewX(-30deg);
+  &-reverse {
+    transform: skewX(30deg);
+  }
+}
+
+.titleBg {
+  color: $dark-color;
+  background-color: $dark-color;
+  border: $medium-color1 solid 0.1rem;
+  display: flex;
+  flex-direction: row;
+  width: 65rem;
+  height: 25rem;
+  transform: skewX(-30deg);
+  &-reverse {
+    transform: skewX(30deg);
+  }
+}
+
+.titleText {
+  font-family: $Oswald;
+  position: absolute;
+  color: $light-color;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  ul {
+    // position: absolute;
+    list-style: none;
+    text-align: center;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    // transform: translateX(5%)
+  }
+  .btn {
+    font-family: $Poppins;
+    font-size: 1rem;
+    position: absolute; 
+    bottom: -3rem;
+    left: 50%; 
+    transform: translateX(-50%) 
+  }
+}
+
+.titleRight {
+  color: $dark-color;
+  background-color: $primary-color;
+  border: $medium-color1 solid 0.1rem;
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 15rem;
+  margin-left: 0.5rem;
+  transform: skewX(-30deg);
+  &-reverse {
+    transform: skewX(30deg);
+  }
+}

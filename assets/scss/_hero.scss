@@ -1,0 +1,96 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    background: $dark-color;
+    clip-path: polygon(0 0, 100% 0, 100% 70%);
+    z-index: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: $dark-color;
+    clip-path: polygon(0 100%, 0 30%, 100% 100%);
+    z-index: 1;
+  }
+}
+
+.contentBorderOuter {
+  position: relative;
+  background-color: $medium-color2;
+  box-shadow: 0 0.6rem 1rem rgba($color: $dark-color, $alpha: 0.4);
+  width: calc(100vw - 35vw);
+  height: calc(100vh - 35vh);
+  z-index: 2;
+}
+
+.contentBorderInner {
+  position: absolute;
+  background-color: $medium-color2;
+  width: calc(100vw - 37vw);
+  height: calc(100vh - 39vh);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    border-top: 0.5rem solid $medium-color1;
+    border-right: 0.5rem solid $medium-color1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+    border-left: 0.5rem solid $medium-color1;
+    border-bottom: 0.5rem solid $medium-color1;
+  }
+}
+
+.contentText {
+  color: $light-color;
+  font-family: $LibreFranklin;
+  font-size: 3.5rem;
+  margin: 4rem;
+  width: 100%;
+  height: 100%;
+  .curlyBraces {
+    color: $primary-color-lighter;
+  }
+  .indent {
+    margin-left: 4rem;
+  }
+  .codeSyntax {
+    color: $medium-color1;
+  }
+  .btn {
+    font-family: $Poppins;
+    position: absolute;
+    font-size: 2rem;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}

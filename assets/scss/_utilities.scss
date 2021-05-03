@@ -1,0 +1,88 @@
+//! Testing noscroll
+// .noscroll {
+//   position: fixed;
+//   overflow-y: scroll;
+// }
+
+//! Section header
+// .section-header {
+//   padding: 30px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+// }
+
+// .section-header h2 {
+//   font-size: 40px;
+//   margin: 20px 0;
+// }
+
+// .section-padding {
+//   padding: 20px 20px 40px;
+//   background-color: $medium-color2;
+// }
+
+//! Transform
+.upsideDown {
+  transform: rotate(180deg);
+}
+
+//! Icons
+// .icons {
+//   border-top: $medium-color3 solid 2rem;
+//   border-bottom: $medium-color3 solid 2rem;
+//   padding: 30px;
+// }
+
+// .icons h3 {
+//   font-weight: bold;
+//   margin-bottom: 15px;
+// }
+
+// .icons i {
+//   background-color: var(--color1);
+//   color: var(--color4);
+//   padding: 1rem;
+//   border-radius: 50%;
+//   margin-bottom: 15px;
+// }
+
+
+
+// body > section.icons.bg-dark.flex-grid > div > div:nth-child(1)
+
+// todo this is what I used to add style
+// body > section.icons.bg-dark.flex-grid > div > div {
+//   padding: 1rem;
+//   margin: 1rem;
+//   & i {
+//     color: $primary-color;
+//   }
+//   & p {
+//     color: $medium-color;
+//   }
+// }
+
+// body > section.icons.bg-dark.flex-grid > div > div:nth-child(1) > i
+
+
+//! card
+// .card {
+//   background: #383838;
+//   color: #f4f4f4;
+//   padding: 1rem 1rem;
+//   box-sizing: border-box;
+//   text-align: center;
+//   box-shadow: 0 10px 15px rgba($color: #000000, $alpha: 0.4);
+// }
+
+// .cardPrimary {
+//   background: $primary-color;
+//   color: $light-color;
+//   padding: 1rem 1rem;
+//   box-sizing: border-box;
+//   text-align: center;
+//   box-shadow: 0 10px 15px rgba($color: #000000, $alpha: 0.4);
+// }

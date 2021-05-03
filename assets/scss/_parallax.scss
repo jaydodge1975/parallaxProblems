@@ -1,0 +1,156 @@
+//  ! Will also need variables for the colors and HTML examples are at the bottom
+
+.parallax-section {
+  position: relative;
+  width: 100%;
+  height:20vh;
+}
+
+.parallax-section1 {
+  position: relative;
+  width: 100%;
+  height:100vh;
+}
+
+.parallax-child-section {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:20vh;
+}
+
+.parallax-child-section1 {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100vh;
+}
+
+.parallax-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.parallax-title-left {
+  color: $dark-color;
+  background-color: $primary-color;
+  border: $medium-color1 solid 0.1rem;
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  transform: skewX(-30deg);
+  &-reverse {
+    transform: skewX(30deg);
+  }
+}
+
+.parallax-title-bg {
+  color: $dark-color;
+  background-color: $dark-color;
+  border: $medium-color1 solid 0.1rem;
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 5rem;
+  transform: skewX(-30deg);
+  &-reverse {
+    transform: skewX(30deg);
+  }
+}
+
+.parallax-title-text {
+  font-family: $Oswald;
+  position: absolute;
+  color: $light-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.parallax-title-right {
+  color: $dark-color;
+  background-color: $primary-color;
+  border: $medium-color1 solid 0.1rem;
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  transform: skewX(-30deg);
+  &-reverse {
+    transform: skewX(30deg);
+  }
+}
+
+.parallax-image {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
+  background-attachment:scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-1 {
+  background-image: url(../images/parallax/img_parallax1.jpg);
+  }
+  &-2 {
+  background-image: url(../images/parallax/img_parallax2.jpg);
+  }
+  &-3 {
+  background-image: url(../images/parallax/img_parallax4.jpg);
+  }
+  &-4 {
+    background-image: url(../images/parallax/img_parallax5.jpg);
+  }
+  &::before {
+    content: '';
+    background-color: $dark-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 20;
+  }
+  &-1::before {
+    opacity: 0;
+  }
+
+
+}
+
+// ! Just parallax img
+// <div class="parallax-section">
+// <div class="parallax-child-section">
+//   <section class="parallax-image parallax-image-1" id="parallax-1"></section>
+// </div>
+// </div>
+
+// ! Parallax with section title
+// <div class="parallax-section">
+// <div class="parallax-child-section">
+//   <section class="parallax-image parallax-image-2" id="parallax-2">
+//   </section>
+//     <div class="parallax-title-container">
+//       <div class="parallax-title-left parallax-title-left-reverse"></div>
+//       <div class="parallax-title-bg parallax-title-bg-reverse"></div>
+//       <div class="parallax-title-right parallax-title-right-reverse"></div>
+//       <div class="parallax-title-text">Projects</div>
+//     </div>
+// </div>
+// </div>

@@ -1,0 +1,50 @@
+@import "fonts";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+
+::-webkit-scrollbar {
+  width: 1rem;
+  &-track {
+    background: $dark-color;
+  }
+  &-thumb {
+    background: $medium-color1;
+  }
+  &-thumb:hover {
+    background: $medium-color1-darker;
+  }
+}
+
+::selection {
+  color: $dark-color;
+  background: $primary-color;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Poppins;
+}
+
+@import "utilities";
+@import "buttons";
+@import "layout";
+// @import "flex";
+@import "hero";
+// @import "navbar";
+@import "parallax";
+@import "headings";
+// @import "lightbox";
+@import "footer";
+@import "media";
+

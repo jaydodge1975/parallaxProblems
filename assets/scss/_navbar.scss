@@ -1,0 +1,163 @@
+
+
+
+
+
+
+
+// ! old code
+// .beforeNav {
+//   width: 100%;
+//   height: 6.5vh;
+//   background-color: $dark-color;
+//   // border: 1px solid red;
+// }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;  
+  top: -1px;
+  padding-top: 1px;
+  height: 75px;
+  width: 100%;
+  background-color: #1e1e1e;
+  transition: 1s;
+  // opacity: 0.8;
+  z-index: 100;
+  &-inner {
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      padding: 0.5rem 0.5rem;
+      line-height: 2.2rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 2px transparent solid;
+      &.current {
+        border-bottom: 2px solid darken(#87ceeb, 15%);
+      }
+    }
+  }
+  &-scrolled {
+    height: 5vh;
+    transition: 1s;
+  }
+}
+
+//! Logo
+.logo {
+  width: auto;
+  height: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 1s;
+  &-scrolled {
+    width: 60px;
+    height: 52.4px;
+    transition: 1s;
+  }
+}
+
+.logo {
+  &-1 {
+    background-image: url("../images/home/logo1.png");
+  }
+  &-2 {
+    background-image: url("../images/home/logo2.png");
+  }
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 7.4rem;
+  height: 2.9rem;
+  transition: ease;
+  transition-duration: 1.2s;
+
+}
+
+$animate: all 0.3s ease-in-out;
+$lineSpeed: 0.3s;
+
+#menu {
+  display: flex;
+  flex-flow: row;
+  .link {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    // margin: 0 0 45px;
+    .hover {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      transition: $animate;
+      position: relative;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0px;
+        height: 2px;
+        margin: 2px 0 0;
+        transition: $animate;
+        transition-duration: $lineSpeed;
+        opacity: 0;
+        background-color: darken(#87ceeb, 15%);
+      }
+      &.hover-1 {
+        &:before,
+        &:after {
+          left: 0;
+        }
+      }
+      &.hover-2 {
+        &:before,
+        &:after {
+          right: 0;
+        }
+      }
+      &.hover-3 {
+        &:before {
+          left: 50%;
+        }
+        &:after {
+          right: 50%;
+        }
+      }
+      &.hover-4 {
+        &:before {
+          left: 0;
+        }
+        &:after {
+          right: 0;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .hover {
+        &:before,
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+        &.hover-3,
+        &.hover-4 {
+          &:before,
+          &:after {
+            width: 51%;
+          }
+        }
+      }
+    }
+  }
+}

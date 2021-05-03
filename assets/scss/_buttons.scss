@@ -1,0 +1,44 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin: auto auto;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: $primary-color;
+  color: $light-color;
+  & a {
+    text-decoration: none;
+    color: $light-color;
+  }
+  &:hover {
+    background: $primary-color-dark;
+    opacity: 1;
+  }
+}
+
+// .btn-primary, .bg-primary {
+//  background: $primary-color;
+//  color: $medium-color3;
+// //  opacity: 0.8;
+// }
+
+// .btn-secondary, .bg-secondary {
+//  background: $secondary-color;
+//  color: var(--color4);
+// }
+
+// .btn-dark, .bg-dark {
+//   background: $dark-color;
+//   color: $light-color;
+// }
+
+// .btn-light, .bg-light {
+//   background: var(--color5);
+//   color: var(--color3);
+// }
+
+// .btn-outline {
+//   background: transparent;
+//   border: 1px solid var(--color4);
+// }

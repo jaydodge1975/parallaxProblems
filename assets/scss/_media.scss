@@ -1,0 +1,111 @@
+//! Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+
+  .parallax-section {
+    height:10vh;
+  }
+  
+  .parallax-section1 {
+    height:100vh;
+  }
+  
+  .parallax-child-section {
+    height:10vh;
+  }
+  .parallax-title-container {
+    height: 10vh;
+  }
+  .contentBorderInner {
+    width: calc(100vw - 40vw);
+    height: calc(100vh - 38vh);
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      border-top: 0.2rem solid $medium-color1;
+      border-right: 0.2rem solid $medium-color1;
+    }
+    &::after {
+      width: 2rem;
+      height: 2rem;
+      border-left: 0.2rem solid $medium-color1;
+      border-bottom: 0.2rem solid $medium-color1;
+    }
+  }
+
+  .contentText {
+    font-size: 1rem;
+    margin: 1rem;
+    padding-top: 5rem;
+    .indent {
+      margin-left: 1rem;
+    }
+    .btn {
+      font-size: 0.7rem;
+      bottom: 5rem;
+    }
+  }
+}
+
+
+.parallax-title-left {
+  width: 5rem;
+  height: 1.25rem;
+}
+
+.parallax-title-bg {
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.parallax-title-text {
+  font-size: 1rem;
+}
+
+.parallax-title-right {
+  width: 5rem;
+  height: 1.25rem;
+}
+
+
+
+
+
+//! Small devices (portrait tablets and large phones, 600px and up)
+// @media only screen and (min-width: 600px) {
+
+
+// }
+
+//! Medium devices (landscape tablets, 768px and up)
+// @media only screen and (min-width: 768px) {
+
+// }
+
+//! Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+
+  .parallax-title-left {
+    width: 10rem;
+    height: 2.5rem;
+  }
+
+  .parallax-title-bg {
+    width: 20rem;
+    height: 5rem;
+  }
+  
+  .parallax-title-text {
+    font-size: 2rem;
+  }
+  
+  .parallax-title-right {
+    width: 10rem;
+    height: 2.5rem;
+  }
+
+}
+
+//! Extra large devices (large laptops and desktops, 1200px and up)
+// @media only screen and (min-width: 1200px) {
+
+// }

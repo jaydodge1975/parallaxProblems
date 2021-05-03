@@ -1,0 +1,99 @@
+//! use fonts by adding variables to the font-family eg. "font-family: $Poppins;"
+//! disable font family variable to check for errors to tell if you're using the font
+//! enable or disable the @import here as needed to include or exclude the font
+
+//! Poppins
+//! font-family: 'Poppins', sans-serif;
+$Poppins: 'Poppins', sans-serif;
+//! Styles 100 to 900
+//! Popular pairings - Roboto, Open Sans, Laro, Source Sans Pro, Lato
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Roboto
+//! font-family: 'Roboto', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+//! Styles 100 to 900
+//! Popular pairings - Open Sans, Noto Sans JP, Lato
+//! There is Roboto Condensed, Roboto Mono, and Roboto Slab
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+//! Open Sans
+//! font-family: 'Open Sans', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+//! Styles 300 to 800
+//! Popular pairings - Roboto, Montserrat, Lato, Raleway
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+//! Source Sans Pro
+//! font-family: 'Source Sans Pro', sans-serif;
+$SourceSansPro: 'Source Sans Pro', sans-serif;
+//! Styles 200 to 900
+//! Popular pairings - Roboto, Roboto Condensed, Lato, Open Sans, Montserrat
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+//! Lato
+//! font-family: 'Lato', sans-serif;
+$Lato: 'Lato', sans-serif;
+//! Styles 100 to 900
+//! Popular pairings - Roboto, Open Sans, Source Sans Pro, Oswald, Raleway
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+//! Montserrat
+//! font-family: 'Montserrat', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
+//! Styles 100 to 900
+//! Popular pairings - Roboto, Open Sans, Roboto Slab, Raleway, Lato
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Oswald
+//! font-family: 'Oswald', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+//! Styles 200 to 700
+//! Popular pairings - Open Sans, Roboto, Lato, Montserrat, Raleway
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+//! Raleway
+//! font-family: 'Raleway', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+//! Styles 100 to 900
+//! Popular pairings - Open Sans, Roboto, Lato, Montserrat, Oswald
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Nunito
+//! font-family: 'Nunito', sans-serif;
+$Nunito: 'Nunito', sans-serif;
+//! Styles 200 to 900
+//! Popular pairings - Roboto, Open Sans, Montserrat, Lato, Poppins
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+//! Libre Franklin
+//! font-family: 'Libre Franklin', sans-serif;
+$LibreFranklin: 'Libre Franklin', sans-serif;
+//! Styles 100 to 900
+//! Popular pairings - Montserrat, Open Sans, Roboto Slab, Roboto, Poppins
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Yusei Magic
+//! font-family: 'Yusei Magic', sans-serif;
+$YuseiMagic: 'Yusei Magic', sans-serif;
+//! Styles only Regular 400
+//! Popular pairings - Open Sans, Roboto, Montserrat, Lato, Roboto Slab
+// @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+
+
+
+//! Hachi Maru Pop
+//! font-family: 'Hachi Maru Pop', cursive;
+$HachiMaruPop: 'Hachi Maru Pop', cursive;
+//! Styles only Regular 400
+//! Popular pairings - Open Sans, Roboto, Montserrat, Poppins, Abril Fatface
+// @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+//! Indie Flower
+//! font-family: 'Indie Flower', cursive;
+$IndieFlower: 'Indie Flower', cursive;
+//! Styles only Regular 400
+//! Popular pairings - Open Sans, Lato, Oswald, Roboto, Raleway
+// @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
